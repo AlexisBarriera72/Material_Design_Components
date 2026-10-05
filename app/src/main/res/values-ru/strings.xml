@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Name: Alexis Y Barriera Pacheco
+Student id: 843-22-3478
+Date: 3/10/2026
+ -->
+<resources>
+    <string name="app_name">Компоненты Material Design</string>
+    <string name="action_settings">Настройки</string>
+    <!--  Primera MaterialCardView  -->
+    <string name="card_title">UPR в Понсе</string>
+    <string name="uprp_vision">Университет Пуэрто-Рико в Понсе стремится быть учреждением, которое наиболее эффективно содействует академическому и профессиональному развитию своих студентов и сообщества.</string>
+    <string name="btn_register">Регистрация</string>
+    <string name="btn_skip">Пропустить</string>
+    <!--  Segunda MaterialCardView  -->
+    <string name="title_card_sici">Компьютерные информационные системы</string>
+    <string name="card_password">Пароль</string>
+    <string name="card_input_url">Ввод URL</string>
+    <string name="card_required">Обязательно</string>
+    <string name="card_invalid_url">Неверный URL</string>
+    <!--  Otros componentes  -->
+    <string name="color_green">Зелёный</string>
+    <string name="color_red">Красный</string>
+    <string name="color_blue">Синий</string>
+    <string name="enable_toggle">Включить кнопки</string>
+    <string name="hide_fab">Скрыть FAB</string>
+    <string name="show_fab">Показать FAB</string>
+    <string name="slider">Ползунок</string>
+    <string name="slider_value">Значение ползунка</string>
+    <string name="payment_method">Способ оплаты:</string>
+    <string name="payment_selected">"Выбранный способ оплаты: "</string>
+    <!--  Mensajes  -->
+    <string name="message_action_success">Действие выполнено успешно</string>
+</resources>

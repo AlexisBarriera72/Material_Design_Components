@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Name: Alexis Y. Barriera Pacheco
+Student Id: 843-22-3478
+Date: 3/10/2026
+ -->
+<resources>
+    <string name="app_name">Componentes de Material Design</string>
+    <string name="action_settings">Configuración</string>
+    <!--  Primera MaterialCardView  -->
+    <string name="card_title">UPR en Ponce</string>
+    <string name="uprp_vision">La Universidad de Puerto Rico en Ponce aspira a ser la institución que promueva con mayor efectividad el desarrollo académico y profesional de sus estudiantes y su comunidad.</string>
+    <string name="btn_register">Registrar</string>
+    <string name="btn_skip">Omitir</string>
+    <!--  Segunda MaterialCardView  -->
+    <string name="title_card_sici">Sistemas de Información Computadorizados</string>
+    <string name="card_password">Contraseña</string>
+    <string name="card_input_url">Entrada de URL</string>
+    <string name="card_required">Requerido</string>
+    <string name="card_invalid_url">URL inválido</string>
+    <!--  Otros componentes  -->
+    <string name="color_green">Verde</string>
+    <string name="color_red">Rojo</string>
+    <string name="color_blue">Azul</string>
+    <string name="enable_toggle">Habilitar botones</string>
+    <string name="hide_fab">Ocultar FAB</string>
+    <string name="show_fab">Mostrar FAB</string>
+    <string name="slider">Deslizador</string>
+    <string name="slider_value">Valor del deslizador</string>
+    <string name="payment_method">Método de pago:</string>
+    <string name="payment_selected">"Método de pago seleccionado: "</string>
+    <!--  Mensajes  -->
+    <string name="message_action_success">Acción realizada con éxito</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Name: Alexis Y. Barriera Pacheco
+Student Id: 843-22-3478
+Date: 3/10/2026
+-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- Contenido principal de la aplicacion -->
+    <include
+        android:id="@+id/content_main"
+        layout="@layout/content_activity" />
+
+    <!-- Barra inferior con icono de navegacion y menu -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:hideOnScroll="true"
+        app:fabAnimationMode="scale"
+        app:navigationIcon="@drawable/ic_menu"
+        app:menu="@menu/menu_activity"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored" />
+
+    <!-- Boton flotante anclado a la barra inferior -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_a_photo"
+        app:layout_anchor="@id/bottom_app_bar"
+        android:contentDescription="TODO" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

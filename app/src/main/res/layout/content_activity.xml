@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Name: Alexis Y. Barriera Pacheco
+Student id: 843-22-3478
+Date: 3/10/2026
+-->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <!-- Primera MaterialCardView -->
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cvFirst" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_min" android:layout_marginStart="@dimen/margin_min" android:layout_marginEnd="@dimen/margin_min">
+            <!-- 8dp -->
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="@dimen/common_padding" android:paddingStart="@dimen/common_padding" android:paddingEnd="@dimen/common_padding">
+                <!-- 16dp -->
+                <ImageView android:id="@+id/imgCardview" android:layout_width="@dimen/cardview_img_size" android:layout_height="@dimen/cardview_img_size" android:src="@drawable/leon_uprp" android:contentDescription="TODO" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnRegister" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_min" android:text="@string/btn_register" app:icon="@drawable/ic_app_registration" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/imgCardview"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSkip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_skip" app:layout_constraintEnd_toStartOf="@+id/btnRegister" app:layout_constraintTop_toTopOf="@+id/btnRegister" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+                <TextView android:id="@+id/tvTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/card_title" android:textAppearance="?attr/textAppearanceHeadline5" android:fontFamily="serif" android:layout_marginStart="@dimen/common_padding" app:layout_constraintStart_toEndOf="@id/imgCardview" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:layout_width="0dp" android:layout_height="0dp" android:text="@string/uprp_vision" android:textAppearance="?attr/textAppearanceBody1" android:fontFamily="serif" android:maxLines="3" android:ellipsize="end" app:layout_constraintStart_toStartOf="@id/tvTitle" app:layout_constraintEnd_toEndOf="@id/tvTitle" app:layout_constraintTop_toBottomOf="@id/tvTitle" app:layout_constraintBottom_toBottomOf="@id/imgCardview"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!-- Segunda MaterialCardView -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="visible" android:layout_marginTop="@dimen/margin_min" android:layout_marginStart="@dimen/margin_min" android:layout_marginEnd="@dimen/margin_min">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/tvTitle2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/title_card_sici" android:textAppearance="?attr/textAppearanceHeadline5" android:fontFamily="serif" android:layout_margin="@dimen/common_padding" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilPassword" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/card_password" android:layout_marginTop="@dimen/common_padding" android:enabled="true" app:endIconMode="password_toggle" app:layout_constraintStart_toStartOf="@id/tvTitle2" app:layout_constraintEnd_toEndOf="@id/tvTitle2" app:layout_constraintTop_toBottomOf="@id/tvTitle2" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilUrl" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/card_input_url" android:layout_marginTop="@dimen/common_padding" app:helperText="@string/card_required" app:endIconMode="clear_text" app:layout_constraintStart_toStartOf="@id/tvTitle2" app:layout_constraintEnd_toEndOf="@id/tvTitle2" app:layout_constraintTop_toBottomOf="@id/tilPassword" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/etUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/imgCover" android:layout_width="0dp" android:layout_height="@dimen/card_img_cover_height" android:importantForAccessibility="no" android:background="@color/design_default_color_secondary" android:visibility="visible" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tilUrl"/>
+                <!-- Material Divider -->
+                <com.google.android.material.divider.MaterialDivider android:id="@+id/div_card" android:layout_width="match_parent" android:layout_height="3dp" app:dividerColor="@android:color/darker_gray" android:layout_margin="@dimen/common_padding" app:layout_constraintTop_toBottomOf="@id/imgCover" app:layout_constraintStart_toStartOf="@id/imgCover"/>
+                <!-- Material Button Toggle Group -->
+                <com.google.android.material.button.MaterialButtonToggleGroup android:id="@+id/toggleGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/div_card" app:layout_constraintStart_toStartOf="@id/div_card" app:layout_constraintEnd_toEndOf="@id/div_card" app:singleSelection="false" android:layout_marginTop="@dimen/common_padding" android:layout_marginBottom="@dimen/common_padding">
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnGreen" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_green"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnRed" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_red"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnBlue" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_blue"/>
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+                <!-- Material Check Box -->
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@+id/chb_enable_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable_toggle" app:layout_constraintTop_toBottomOf="@id/toggleGroup" app:layout_constraintStart_toStartOf="@id/div_card" android:layout_marginTop="@dimen/margin_min" android:layout_marginStart="@dimen/margin_min"/>
+                <!-- Switch Material -->
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swFab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hide_fab" app:layout_constraintEnd_toEndOf="@id/imgCover" app:layout_constraintTop_toTopOf="@id/chb_enable_toggle" app:layout_constraintBottom_toBottomOf="@id/chb_enable_toggle"/>
+                <!-- Slider -->
+                <com.google.android.material.slider.Slider android:id="@+id/sldVol" android:layout_width="match_parent" android:layout_height="wrap_content" android:valueFrom="0.0" android:valueTo="10.0" android:value="5" android:stepSize="1.0" android:contentDescription="@string/slider" app:layout_constraintTop_toBottomOf="@id/chb_enable_toggle"/>
+                <!-- Material Radio Button -->
+                <TextView android:id="@+id/tvPaymentMethod" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/payment_method" android:textAppearance="?attr/textAppearanceHeadline6" android:fontFamily="serif" android:layout_margin="@dimen/common_padding" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/sldVol"/>
+                <RadioGroup android:id="@+id/rgCardPay" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tvPaymentMethod">
+                    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/rbtnVisa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_visa"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/rbtnMastercard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_mastercard"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/rbtnPayPal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_paypal"/>
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

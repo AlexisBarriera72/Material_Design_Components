@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Name: Alexis Y. Barriera Pacheco
+Student Id: 843-22-3478
+Date: 3/10/2026
+-->
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#80DEEA</color>
+    <color name="teal_500">#00BCD4</color>
+    <color name="teal_700">#0097A7</color>
+    <color name="blue_200">#9FA8DA</color>
+    <color name="blue_500">#3F51B5</color>
+    <color name="blue_700">#303F9F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_accent">#FF4081</color>
+    <color name="color_error">#FF5722</color>
+</resources>
